@@ -1,0 +1,23 @@
+---
+---
+
+<!-- translate fast when let go, it slowly move back to its place -->
+<button class="button">Click Me!</button>
+
+<style>
+  .button {
+    padding: 1rem 2rem;
+    background-color: mediumslateblue;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform 1000ms;
+  }
+
+  .button:hover,
+  .button:focus-visible {
+    transform: translateY(-0.75rem);
+    transition: transform 250ms;
+  }
+</style>
